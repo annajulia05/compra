@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Pedido de compra</h1>
+    <script>
+        var carne = parseFloat(prompt("Digite o preço da carne"))
+        var leite = parseFloat(prompt("Digite o preço da leite"))
+        var cafe = parseFloat(prompt("Digite o preço da café"))
+        var tomate = parseFloat(prompt("Digite o preço da tomate"))
+
+        var qtdecarne = parseFloat(prompt("Digite a quantidade da carne"))
+        var qtdoleite = parseFloat(prompt("Digite a quantidade do leite"))
+        var qtdocafe = parseFloat(prompt("Digite a quantidade do café"))
+        var qtdetomate = parseFloat(prompt("Digite a quantidade do tomate"))
+
+        var totalcarne = qtdecarne * carne
+        var totalleite = qtdoleite * leite
+        var totalcafe = qtdocafe * cafe
+        var totaltomate = qtdetomate * tomate
+        
+        var totalcompra = totalcarne + totalleite + totalcafe + totaltomate
+
+        document.write("Quantidade de carne:" + qtdecarne)
+        document.write("<br>")
+        document.write("Quantidade de Leite:" + qtdoleite)
+        document.write("<br>")
+        document.write("Quantidade do Café:" + qtdocafe)
+        document.write("<br>")
+        document.write("Quantidade de Tomate:" + qtdetomate)
+        document.write("<br>")
+
+        
+        document.write("Total da Carne é: R$" + totalcarne)
+        document.write("<br>")
+        document.write("Total do Leite é: R$" + totalleite)
+        document.write("<br>")
+        document.write("Total do Café é: R$" + totalcafe)
+        document.write("<br>")
+        document.write("Total do Tomate é: R$" + totaltomate)
+        document.write("<br>")
+        document.write("Total da compra é: R$" + totalcompra)
+
+    </script>
+</center>
+</body>
+</html>
